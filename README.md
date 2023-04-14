@@ -2,9 +2,9 @@
 
 One of the applications where deep learning is being used extensively is Autonomous Driving. The autonous driving mechanism needs to detect innumerable objects (pedestrians, other cars, obstacles etc) and make decisions. One of the smaller problems is to detect traffic signs and make decisions accordingly. I'm going to solve problems of detecting traffic signs on the road and detecting the vehicles.
 
-# Vehicle Detection
+# Violation Detection
 
-To ensure the presence of a vehicle in the input medium, two detection methods are employed, namely audio and video. In the video method, each frame is processed and the presence of a vehicle is identified, which returns a confidence level and probability score. The audio detection method involves passing the audio from the video through a CNN model, which provides a probability score. By obtaining probability scores from both methods, ensemble learning is performed to arrive at the final verdict.
+A traffic violation detection system is a technology that is used to detect and alert authorities about any traffic rule violations in real-time. This system uses various detection techniques such as computer vision, machine learning, and deep learning algorithms to analyze and identify traffic violations such as jumping red lights, over-speeding, and wrong lane driving. The system can be integrated with existing traffic monitoring infrastructure such as CCTV cameras, speed detectors, and license plate recognition systems to capture and analyze the relevant data
 
 # Dataset
 
@@ -33,7 +33,7 @@ On average, it took approximately 50 minutes to an hour to train the model on ou
 
 ![image](https://user-images.githubusercontent.com/92366177/232070917-e63fd8ea-7bd6-414b-8d4c-a82e8d33c8af.png)
 
-The optimization of (oneDNN) and (oneDAL) in __TensorFlow 11.0 and sklearnex versions__ respectively played a significant role in achieving the required training output in just 35 minutes, making it the most notable tool among all. This optimization significantly boosted the speed of our training process. We are also exploring the possibility of further enhancing the speed by using the openvino toolkit, which has the potential to reduce the training time to just 20 minutes.
+Using the optimized libraries (oneDNN) and (oneDAL) of oneAPI in __TensorFlow 11.0 and sklearnex versions__ respectively played a significant role in achieving the required training output in just 35 minutes, making it the most notable tool among all. This optimization significantly boosted the speed of our training process. We are also exploring the possibility of further enhancing the speed by using the openvino toolkit, which has the potential to reduce the training time to just 20 minutes.
 
 # Conclusion
 
