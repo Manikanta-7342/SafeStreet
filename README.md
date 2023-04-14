@@ -1,4 +1,4 @@
-# Traffic Signal Detection
+# SignalSense
 
 One of the applications where deep learning is being used extensively is Autonomous Driving. The autonous driving mechanism needs to detect innumerable objects (pedestrians, other cars, obstacles etc) and make decisions. One of the smaller problems is to detect traffic signs and make decisions accordingly. I'm going to solve problems of detecting traffic signs on the road.
 
