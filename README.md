@@ -1,8 +1,12 @@
-# TrafficSign
+# Traffic Signal Detection
 
 One of the applications where deep learning is being used extensively is Autonomous Driving. The autonous driving mechanism needs to detect innumerable objects (pedestrians, other cars, obstacles etc) and make decisions. One of the smaller problems is to detect traffic signs and make decisions accordingly. I'm going to solve problems of detecting traffic signs on the road.
 
 The training dataset contains around 39,000 images while test dataset contains around 12,000 images containing 43 different classes. I will be using Convolutional Neural Networks(CNN) to solve this problem using Keras framework and tensorflow as backend.
+
+# Vehicle Detection
+
+To ensure the presence of a vehicle in the input medium, two detection methods are employed, namely audio and video. In the video method, each frame is processed and the presence of a vehicle is identified, which returns a confidence level and probability score. The audio detection method involves passing the audio from the video through a CNN model, which provides a probability score. By obtaining probability scores from both methods, ensemble learning is performed to arrive at the final verdict.
 
 # Preprocessing Images
 
@@ -24,6 +28,8 @@ We will now build our sequential CNN model with following specifications:
 # Intel OneAPI Edge
 
 On average, it took approximately 50 minutes to an hour to train the model on our local systems. However, certain systems encountered issues and were unable to execute the process at all. To address this issue, I decided to migrate our code to the Intel DevCloud and leverage the capabilities of the Intel Analytics toolkit, which includes tools such as oneDNN and oneDAL. By utilizing these tools, we were able to optimize our model training process and achieve better results.
+
+![image](https://user-images.githubusercontent.com/92366177/232070917-e63fd8ea-7bd6-414b-8d4c-a82e8d33c8af.png)
 
 The optimization of (oneDNN) and (oneDAL) in __TensorFlow 11.0 and sklearnex versions__ respectively played a significant role in achieving the required training output in just 35 minutes, making it the most notable tool among all. This optimization significantly boosted the speed of our training process. We are also exploring the possibility of further enhancing the speed by using the openvino toolkit, which has the potential to reduce the training time to just 20 minutes.
 
