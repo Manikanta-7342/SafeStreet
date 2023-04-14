@@ -1,6 +1,6 @@
 # SignalSense
 
-One of the applications where deep learning is being used extensively is Autonomous Driving. The autonous driving mechanism needs to detect innumerable objects (pedestrians, other cars, obstacles etc) and make decisions. One of the smaller problems is to detect traffic signs and make decisions accordingly. I'm going to solve problems of detecting traffic signs on the road.
+One of the applications where deep learning is being used extensively is Autonomous Driving. The autonous driving mechanism needs to detect innumerable objects (pedestrians, other cars, obstacles etc) and make decisions. One of the smaller problems is to detect traffic signs and make decisions accordingly. I'm going to solve problems of detecting traffic signs on the road and detecting the vehicles.
 
 The training dataset contains around 39,000 images while test dataset contains around 12,000 images containing 43 different classes. I will be using Convolutional Neural Networks(CNN) to solve this problem using Keras framework and tensorflow as backend.
 
