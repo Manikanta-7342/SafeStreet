@@ -4,7 +4,9 @@ One of the applications where deep learning is being used extensively is Autonom
 
 # Violation Detection
 
-A traffic violation detection system is a technology that is used to detect and alert authorities about any traffic rule violations in real-time. This system uses various detection techniques such as computer vision, machine learning, and deep learning algorithms to analyze and identify traffic violations such as jumping red lights, over-speeding, and wrong lane driving. The system can be integrated with existing traffic monitoring infrastructure such as CCTV cameras, speed detectors, and license plate recognition systems to capture and analyze the relevant data
+The vehicles are detected using SSD model. After detecting the vehicles, violation cases are checked. A traffic line is drawn over the road in the preview of the given video footage by the user. The line specifies that the traffic light is red. Violation happens if any vehicle crosses the traffic line in red state.
+
+The detected objects have a green bounding box. If any vehicle passes the traffic light in red state, violation happens. After detecting violation, the bounding box around the vehicle becomes red.
 
 # Dataset
 
